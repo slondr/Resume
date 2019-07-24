@@ -1,0 +1,200 @@
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% Provides multiline comments
+\usepackage{verbatim}
+
+% adjust the page margins
+\usepackage[scale=0.75,margin=0.7in]{geometry}
+% \setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Eric Samuel}{Londres}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \address{694 Deerhead Lake Drive}{Forked River, New Jersey}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(848) 224-1664}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{ericlondres@outlook.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+\begin{document}
+% \begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%   -----       resume       ---------------------------------------------------------
+\makecvtitle
+% \small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+\small{\textbf{Objective:} I am an undergraduate computer science student seeking an internship for the summer of 2019.
+  % Undergraduate computer science student completing the first year of a bachelor's degree at Stevens Institute of Technology. Passionate about technology, with strong communication and interpersonal skills for working in a team and successfully completing projects.}
+
+  \section{Education}
+
+  \vspace{5pt}
+
+  \begin{itemize}
+
+  \item{\cventry{Graduating May 2021}{Bachelor of Science in Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{}}
+    
+  \item{\cventry{Graduated June 2017}{Honors \& Advanced Placement courses}{Lacey Township High School}{Lanoka Harbor, NJ}{}{}}
+
+  \item{\cventry{2015--2016}{Computer Science}{Ocean County Vocational Technical School}{Toms River, NJ}{}{}}
+    % arguments 3 to 6 can be left empty
+
+    % \item{\cventry{2002--2009}{11 GCSEs}{Southlands High School}{Chorley}{\textit{A* to B Including Maths and English}}{}}
+
+  \end{itemize}
+
+  \vspace{2pt}
+
+  \section{Work Experience}
+
+  \vspace{6pt}
+
+  \begin{itemize}
+
+  \item{\cventry{2018--2019}{Network Technician}{Stevens Institute of Technology}{Hoboken, NJ}{}{\vspace{3pt}I was responsible for working in a team installing network equipment, performing on--location diagnostics and handling repairs of network infrastructure. }}
+
+  \item{\cventry{2017}{Publishing Assistant}{Stevens Institute of Technology}{Hoboken, NJ}{}{\vspace{3pt}I was responsible for interpreting and typesetting a doctoral thesis using the LaTeX document preparation system. I worked in a team--oriented environment where accuracy and attention to detail were crucial. }}
+
+  \end{itemize}
+
+
+  \begin{comment}
+
+
+    \subsection{Notable Projects}
+
+    \vspace{5pt}
+
+    \begin{itemize}
+      % 
+    \item{\textbf{Masters Project (Ongoing):} \textit{'Development of an Intelligent Humanoid Robot'}
+
+        \vspace{3pt}
+
+        \small{I am part of a team developing a 5ft autonomous humanoid robot. This ambitious project requires strong team-working skills and high technical ability. I work well as part of the team, contributing in group discussions and taking initiative to set myself tasks when the next stage of the project is not clear. Given the role of electronics supervisor I am responsible for setting goals and ensuring all the electronic system designs are realised on time and meet the specifications of the project.}}
+
+      \newpage
+
+    \item{\textbf{3rd year individual project:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+
+        \vspace{3pt}
+
+        \small{This challenging project took place over the entirety of my third year. It required excellent planning and organisational skills, and the ability to teach myself an entirely new and complex subject. The project was a success, with the system being able to localise a radioactive source down to $ 3 cm$ within a $ 600 m^3$ sensor array. This project has been suggested for publication by my supervisor.}}
+
+      \vspace{6pt}
+
+    \item{\textbf{Industrial Project with Leyland Motors Ltd:}\textit{'Development of a Facility to Ensure the Achievement of Torque Parameters for a Specific Axle Configuration'}
+
+        \vspace{3pt}
+
+        \small{In the 3rd year of my course I spent a week completing an industrial project for Leyland Motors. I worked with a team operating as consultants for a particular problem the company was having. During this project I was working in a professional environment, and co-operating with various managers and engineers to create a design that met the requirements of the problem.}}
+
+
+    \end{itemize}
+  \end{comment}
+  \section{Technical skills}
+
+  \vspace{6pt}
+
+  \begin{itemize}
+
+  \item \textbf{Programming Languages:} Proficient in procedural (C, Python), object--oriented (C++ C\#, Java), and functional (Lisp, OCaml) programming paradigms, as well as web development (HTML/CSS/JavaScript, PHP, MySQL/MariaDB) and publishing (LaTeX) systems.
+
+    \vspace{6pt}
+    \begin{comment}
+    \item \textbf{Industry Software Skills:} Most MS Office products, 
+
+      \vspace{6pt}
+    \end{comment}
+  \item \textbf{Networking Skills:} Highly experienced with Active Directory and SMB setup on Windows hosts with Windows and Mac clients.
+    \begin{comment}
+      \vspace{6pt}
+
+    \item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+    \end{comment}
+  \end{itemize}
+
+  \section{Leadership Experience}
+
+  \vspace{6pt}
+
+  \begin{itemize}
+
+  \item{\cventry{2019--Present}{President}{SITTV}{Hoboken, NJ}{}{As President of SITTV, Stevens Institute of Technology's television studio, I preside over the general operations of the club and the rest of its executive board. I am SITTV's public representative to outside organizations, and I coordinate, schedule, and chair all of our meetings and events.}}
+    
+    \vspace{6pt}
+
+  \item{\cventry{2019--Present}{Webmaster}{Alpha Phi Omega -- Theta Alpha}{Hoboken, NJ}{}{As Webmaster of Stevens's chapter of the Alpha Phi Omega national service fraternity, I managed a full--stack PHP web application used by hundreds of people on a daily basis. I also managed a committee of developers, designers, and idea--havers to develop an entirely new web application from scratch using modern technologies.}}
+    
+    \vspace{6pt}
+    
+  \item{\cventry{2018--2019}{Director of Deliverables}{SITTV}{Hoboken, NJ}{}{In this position, I was tasked with maintaining, upgrading, and generally administering all of the computer and network systems operated by SITTV. I am also tasked with training members of the studio in the use of Adobe, Apple, and Blackmagic audio/vidieo editing software, as well as employing, training, and directing a team of System Administrators.}}
+    
+    \vspace{6pt}
+
+  \item{\cventry{2017--2018}{System Administrator}{SITTV}{Hoboken, NJ}{}{In this position, I was responsible for maintaining and upgrading the wide array of computer systems that SITTV owned. I worked closely with the other members of my team during project planning and execution stages.}}
+  \end{itemize}
+  \begin{comment}
+    \section{References}
+
+    \vspace{6pt}
+    
+    \begin{itemize}
+
+    \item{Up to 4 references available on request}
+    \end{itemize}
+  \end{comment}
+  % Publications from a BibTeX file without multibib
+  % for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+  % to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+  \nocite{*}
+  \bibliographystyle{plain}
+  \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+  % Publications from a BibTeX file using the multibib package
+  % \section{Publications}
+  % \nocitebook{book1,book2}
+  % \bibliographystylebook{plain}
+  % \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+  % \nocitemisc{misc1,misc2,misc3}
+  % \bibliographystylemisc{plain}
+  % \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+  % -----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
