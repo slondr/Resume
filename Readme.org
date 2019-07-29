@@ -2,5 +2,4 @@
 #+AUTHOR: Eric S. Londres
 #+DATE: 2019-07-29
 
-This is my resume. It's written in LaTeX.
-
+This is my resume. It's written in LaTeX. It's licensed under the terms of the BSD 0-clause license.
