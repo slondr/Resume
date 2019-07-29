@@ -1,5 +1,6 @@
 #+TITLE: Resume
 #+AUTHOR: Eric S. Londres
+#+DATE: 2019-07-29
 
 This is my resume. It's written in LaTeX.
 
