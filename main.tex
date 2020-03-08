@@ -1,169 +1,94 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-% \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\usepackage[utf8]{inputenc}
+\documentclass[11pt,letterpaper,roman]{moderncv}
+
+% Modern CV type
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% Packages
 \usepackage{verbatim}
 \usepackage[scale=0.75,margin=0.7in]{geometry}
 \usepackage{import}
 
+% Custom comand definitions
+\definecolor{cvblue}{rgb}{0.22,0.45,0.70}
+\newcommand{\code}{\texttt}
+\newcommand{\bfcolor}[2]{\textbf{\textcolor{#1}{#2}}}
+\newcommand{\bbold}[1]{\bfcolor{cvblue}{#1}}
+\newcommand{\iitem}[1]{\item{#1}.}
+\newcommand{\titem}[2]{\iitem{#1} \hfill \code{[#2]}}
 
-
-\begin{comment}
-  Copyright (C) 2019 by Eric Samuel Londres <elondres@stevens.edu>
-  
-  Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
-  
-  THE SOFTWARE IS PROVIDED ``AS IS'' AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-\end{comment}
-
-
-
-% personal data
+% Personal data
 \name{Eric Samuel}{Londres}
-% \address{694 Deerhead Lake Drive}{Forked River, New Jersey}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{(848) 224-1664}                   % optional, remove / comment the line if not wanted
-\email{ericlondres@outlook.com}                               % optional, remove / comment the line if not wanted
-\homepage{gitlab.com/slondr}                         % optional, remove / comment the line if not wanted
+\phone[mobile]{(848) 224-1664}
+\email{EricLondres@outlook.com}
+\homepage{EricLondr.es}
 
-% ----------------------------------------------------------------------------------
-% content
-% ----------------------------------------------------------------------------------
+%% Content %%
 \begin{document}
-% -----       resume       ---------------------------------------------------------
+
 \makecvtitle
-\small{I am an undergraduate computer science student in my third year of a bachelor's degree at Stevens Institute of Technology. I am passionate about technology, with strong interpersonal and communication skills to leverage my technical knowledge.}
+
+\sethintscolumntowidth{mmm yyyy -- mmm y}
+
+\small{I am an undergraduate computer science student in my third year of a bachelor's degree at Stevens Institute of Technology. I am passionate about technology, with strong interpersonal and communication skills to leverage my technical knowledge. \hfill (References available upon request.)}
+
 \section{Education}
-\vspace{5pt}
-\begin{itemize}
-\item{\cventry{Graduating May 2021}{Bachelor of Science in Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{}}
-  \begin{itemize}
-    \item \textbf{Relevant Coursework:} Algorithms, Data Structures, Systems Programming, Database Management Systems, Human--Computer Interaction, Concurrent Programming, Software Development Process, Probability \& Statistics
-  \end{itemize}
-\end{itemize}
-\vspace{2pt}
-
-\section{Technical Skills}
-
-\vspace{6pt}
-
-\begin{itemize}
-  
-\item \textbf{Programming Languages:} Proficient in procedural (C, Python, Go, Rust), object--oriented (C++ C\#, Java), and functional (Lisp, OCaml, Erlang) programming paradigms. Also proficient with the LaTeX publishing system.
-  
-  \vspace{6pt}
-
-  
-  
-\item \textbf{Web Technologies:} Proficient in front--end development with HTML 5, CSS 3, JavaScript (including ES6 and JQuery), and web frameworks (including React and Svelte); also proficient in back--end development PHP, Go, and JavaScript with ExpressJS, as well as database management including both MySQL/MariaDB and NoSQL (including Google Firebase).
-
-\end{itemize}
+\cventry{Aug 2017 -- May 2021}{B.S. Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{}
 
 \section{Work Experience}
 
-\vspace{6pt}
-
-\begin{itemize}
-
-\item{\cventry{2019--Present}{Stevens Institute of Technology}{Software Engineer}{Hoboken, NJ}{}{\vspace{3pt}
-      \begin{itemize}
-      \item Planned, developed, and maintained several full web applications, including a complex interactive system written in PHP, MariaDB, and JQuery.
-      \item Designed and created several event--specific websites using React.
-      \item Led development on a virtual reality project using Unity.
-      \item Introduced several new technologies to the workplace that substantially improved developer productivity and code quality, including git version control, continuous integration/deployment, and ECMAScript 6.
-      \end{itemize}}}
-  
-\item{\cventry{2017}{Stevens Institute of Technology}{Publishing Assistant}{Hoboken, NJ}{}{\vspace{3pt}
-      \begin{itemize}
-      \item Typeset over 300 pages of a hand--written doctoral thesis using the LaTeX document preparation system.
-      \item Assisted my project team members in copy editing to ensure accuracy and correctness of work.
-      \end{itemize}
-      }}
-
-\end{itemize}
-
-
-\begin{comment}
-
-
-  \subsection{Notable Projects}
-
-  \vspace{5pt}
-
+\cventry{Jun 2019 -- Present}{Stevens Institute of Technology}{Student Assistant}{Hoboken, NJ}{}{
   \begin{itemize}
-    % 
-  \item{\textbf{Masters Project (Ongoing):} \textit{'Development of an Intelligent Humanoid Robot'}
+    \titem{Planned, developed, and maintained several full web applications}{PHP, SQL, JQuery}
+    \titem{Designed and implemented several event--specific websites}{React}
+  \item Led development on a virtual reality project using \bbold{Unity}.
+    \iitem{Introduced several new technologies to the workplace that substantially improved developer productivity and code quality, including \bbold{Git}, \bbold{GitLab CI/CD}, and modern \bbold{JavaScript}}
+\end{itemize}}
 
-      \vspace{3pt}
+\section{Technical Skills}
+  
+\cvitem{Languages}{Bash, C, C\#, C++, Erlang, Go, Java, JavaScript, LaTeX, Lisp, OCaml, PHP, Python, Rust}
+  
+\cvitem{Web Development}{HTML, CSS/SASS, React, Svelte, Express}
 
-      \small{I am part of a team developing a 5ft autonomous humanoid robot. This ambitious project requires strong team-working skills and high technical ability. I work well as part of the team, contributing in group discussions and taking initiative to set myself tasks when the next stage of the project is not clear. Given the role of electronics supervisor I am responsible for setting goals and ensuring all the electronic system designs are realised on time and meet the specifications of the project.}}
+\cvitem{Technologies}{GNU/Linux, Git, Node, GitLab CI, SQL, MongoDB, GCP, AWS}
 
-    \newpage
+\section{Relevant Coursework}
 
-  \item{\textbf{3rd year individual project:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+\cvitem{Computer Science}{Algorithms, Data Structures, Concurrent Programming, Operating Systems, Database Management Systems, Human--Computer Interaction, Compiler Design, Enterprise Software}
 
-      \vspace{3pt}
-
-      \small{This challenging project took place over the entirety of my third year. It required excellent planning and organisational skills, and the ability to teach myself an entirely new and complex subject. The project was a success, with the system being able to localise a radioactive source down to $ 3 cm$ within a $ 600 m^3$ sensor array. This project has been suggested for publication by my supervisor.}}
-
-    \vspace{6pt}
-
-  \item{\textbf{Industrial Project with Leyland Motors Ltd:}\textit{'Development of a Facility to Ensure the Achievement of Torque Parameters for a Specific Axle Configuration'}
-
-      \vspace{3pt}
-
-      \small{In the 3rd year of my course I spent a week completing an industrial project for Leyland Motors. I worked with a team operating as consultants for a particular problem the company was having. During this project I was working in a professional environment, and co-operating with various managers and engineers to create a design that met the requirements of the problem.}}
-
-
-  \end{itemize}
-\end{comment}
+\cvitem{Mathematics}{Discrete Structures, Probability \& Statistics, Mathematical Logic}
 
 \section{Leadership Experience}
 
-\vspace{6pt}
-
-\begin{itemize}
-
-\item{\cventry{2019--Present}{SITTV}{President}{Hoboken, NJ}{}{As President of SITTV, Stevens Institute of Technology's television studio, I preside over the general operations of the club and the rest of its executive board. I am SITTV's public representative to outside organizations, and I coordinate, schedule, and chair all of our meetings and events.}}
-  
-  \vspace{6pt}
-
-\item{\cventry{2019--Present}{Alpha Phi Omega --- Theta Alpha Chapter}{Webmaster}{Hoboken, NJ}{}{As Webmaster of Stevens's chapter of the Alpha Phi Omega national service fraternity, I manage a full--stack PHP web application used by hundreds of people on a daily basis. I also coordinate and lead a committee of developers, designers, and idea--havers to work on developing an entirely new web application from scratch using modern technologies.}}
-  
-  \vspace{6pt}
-  
-\item{\cventry{2018--2019}{SITTV}{Director of Deliverables}{Hoboken, NJ}{}{In this position, I was tasked with maintaining, upgrading, and generally administering all of the computer and network systems operated by SITTV. I was also tasked with training members of the studio in the use of Adobe, Apple, and Blackmagic audio/video editing software, as well as employing, training, and directing a team of System Administrators.}}
-  
-\end{itemize}
-\begin{comment}
-  \section{References}
-
-  \vspace{6pt}
-  
+\cventry{Mar 2019 -- Present}{SITTV}{President}{Hoboken, NJ}{}{
   \begin{itemize}
-
-  \item{Up to 4 references available on request}
+    \iitem{Oversee the operations of the organization and handle administrative responsibilities}
+    \iitem{Foster a healthy and productive environment for other executive officers and organization members}
+    \iitem{Organize \& chair events, including public events and executive board meetings}
+    \iitem{Communicate on behalf of the organization to outside groups, including contract negotiations, budget defenses, and business meetings}
   \end{itemize}
-\end{comment}
-% Publications from a BibTeX file without multibib
-% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-% to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+}
+  
+\cventry{Dec 2018 -- Dec 2019}{Alpha Phi Omega --- Theta Alpha Chapter}{Webmaster}{Hoboken, NJ}{}{
+  \begin{itemize}
+    \titem{Managed a web application utilized by hundreds of users on a daily basis}{PHP, MySQL}
+    \iitem{Introduced new technologies such as \bbold{Cloudflare}; reduced page load times by over 90\%, and reduced initial page--load times to less than 1 second while increasing developer efficiency}
+    \iitem{Recruited, trained, and led a team of junior developers}
+    \titem{Designed and began implementation of a large--scale web application using modern technologies such as \bbold{Google Firebase} and user experience design using \bbold{Balsamiq}}{React}
+  \end{itemize}
+}
+    
+\cventry{Mar 2018 -- Mar 2019}{SITTV}{Director of Deliverables}{Hoboken, NJ}{}{
+  \begin{itemize}
+    \titem{Maintained, upgraded, and administered computer and network systems, including Windows, Mac, and Linux clients and servers}{Bash}
+    \iitem{Recruited and trained members in the use of \bbold{Adobe Premiere} and \bbold{Apple Final Cut Pro X} video editing software}
+    \iitem{Employed, trained, and oversaw a team of systems administrators}
+    \iitem{Designed and configured the backbone of a cable video streaming platform for a potential audience of 1,500 viewers}
+  \end{itemize}
+}
 
-% Publications from a BibTeX file using the multibib package
-% \section{Publications}
-% \nocitebook{book1,book2}
-% \bibliographystylebook{plain}
-% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-% \nocitemisc{misc1,misc2,misc3}
-% \bibliographystylemisc{plain}
-% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-% -----       letter       ---------------------------------------------------------
-
+  %In this position, I was tasked with maintaining, upgrading, and generally administering all of the computer and network systems operated by SITTV. I was also tasked with training members of the studio in the use of Adobe, Apple, and Blackmagic audio/video editing software, as well as employing, training, and directing a team of System Administrators.}
+  
 \end{document}
 
-
-%% end of file `template.tex'.
