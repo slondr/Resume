@@ -4,9 +4,13 @@
 # possible alternative: https://github.com/natlownes/docker-latex
 image: blang/latex
 
-build:
+pages:
   script:
     - latexmk -pdf
+    - mkdir public
+    - mv *.pdf public/
   artifacts:
     paths:
-      - "*.pdf"
+      - public
+  only:
+    - master
