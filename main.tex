@@ -2,7 +2,7 @@
 
 % Modern CV type
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvcolor{grey}
 
 % Packages
 \usepackage{verbatim}
@@ -30,18 +30,21 @@
 
 \sethintscolumntowidth{mmm yyyy -- mmm y}
 
-\small{I am an undergraduate computer science student in my third year of a bachelor's degree at Stevens Institute of Technology. I am passionate about technology, with strong interpersonal and communication skills to leverage my technical knowledge. \hfill (References available upon request.)}
+%% \small{I am an undergraduate computer science student in my third year of a bachelor's degree at Stevens Institute of Technology. I am passionate about technology, with strong interpersonal and communication skills to leverage my technical knowledge. \hfill (References available upon request.)}
 
 \section{Education}
-\cventry{Aug 2017 -- May 2021}{B.S. Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{}
+\cventry{Aug 2017 -- May 2021}{Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{
+  \begin{itemize}
+    \item{Presidential Scholarship}
+  \end{itemize}}
 
 \section{Work Experience}
 
 \cventry{Jun 2019 -- Present}{Stevens Institute of Technology}{Student Assistant}{Hoboken, NJ}{}{
   \begin{itemize}
-    \titem{Planned, developed, and maintained complex web applications}{PHP, SQL, JQuery}
+    \titem{Planned, developed, and maintained complex web applications to allow a speaker to create an interactive experience set in a nuclear war}{PHP, SQL, JQuery}
     \titem{Designed and implemented several event--specific websites}{React}
-  \item Led development on a virtual reality project using \bbold{Unity}.
+    \iitem Led development on a virtual reality project using \bbold{Unity} which visualizes the scale and scope of a nuclear detonation in New York City.
     \iitem{Introduced several new technologies to the workplace that substantially improved developer productivity and code quality, including \bbold{Git}, \bbold{GitLab CI/CD}, and modern \bbold{JavaScript}}
 \end{itemize}}
 
