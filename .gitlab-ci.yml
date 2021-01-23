@@ -1,13 +1,9 @@
-# use docker image with latex preinstalled
-# since there is no official latex image, use https://github.com/blang/latex-docker
-# possible alternative: https://github.com/natlownes/docker-latex
-image: blang/latex
+image: alpine
 
 pages:
   script:
-    - latexmk -pdf
     - mkdir public
-    - mv *.pdf public/
+    - mv EricLondresResume.pdf public/
   artifacts:
     paths:
       - public
