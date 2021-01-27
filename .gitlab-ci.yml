@@ -1,6 +1,20 @@
-image: alpine
+image: brokenpylons/lualatex
 
+stages:
+  - build
+  - deploy
+
+build:
+  script:
+    - luarocks install lua-toml
+    - eval $(luarocks path)
+    - lualatex --shell-escape EricLondresResume.tex
+  artifacts:
+    files:
+      - EricLondresResume.pdf
+    
 pages:
+  image: alpine
   script:
     - mkdir public
     - mv EricLondresResume.pdf public/
