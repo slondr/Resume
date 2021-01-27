@@ -5,6 +5,7 @@ stages:
   - deploy
 
 build:
+  stage: build
   script:
     - luarocks install lua-toml
     - eval $(luarocks path)
