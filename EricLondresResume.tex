@@ -1,5 +1,5 @@
 \documentclass[11pt,letterpaper,roman]{moderncv}
-
+\directlua{resume = require "resume"}
 % Modern CV type
 \moderncvstyle{classic}
 \moderncvcolor{grey}
@@ -18,7 +18,7 @@
 \newcommand{\titem}[2]{\iitem{#1} \hfill \code{[#2]}}
 
 % Personal data
-\name{Eric Samuel}{Londres}
+\name{\directlua{resume.get_first_name()}}{\directlua{resume.get_last_name()}}
 \phone[mobile]{(848) 224-1664}
 \email{EricLondres@outlook.com}
 \homepage{EricLondres.tech}
