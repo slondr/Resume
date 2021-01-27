@@ -1,4 +1,5 @@
 \documentclass[11pt,letterpaper,roman]{moderncv}
+\usepackage{luapackageloader}
 \directlua{resume = require("resume")}
 % Modern CV type
 \moderncvstyle{classic}
@@ -18,7 +19,7 @@
 \newcommand{\titem}[2]{\iitem{#1} \hfill \code{[#2]}}
 
 % Personal data
-\name{\directlua{resume.get_first_name()}}{\directlua{resume.get_last_name()}}
+\name{\directlua{tex.print(resume.get_first_name())}}{\directlua{tex.print(resume.get_last_name())}}
 \phone[mobile]{(848) 224-1664}
 \email{EricLondres@outlook.com}
 \homepage{EricLondres.tech}
