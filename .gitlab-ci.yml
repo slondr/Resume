@@ -10,7 +10,7 @@ build:
     - eval $(luarocks path)
     - lualatex --shell-escape EricLondresResume.tex
   artifacts:
-    files:
+    paths:
       - EricLondresResume.pdf
     
 pages:
