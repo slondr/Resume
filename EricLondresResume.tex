@@ -19,10 +19,10 @@
 \newcommand{\titem}[2]{\iitem{#1} \hfill \code{[#2]}}
 
 % Personal data
-\name{\directlua{tex.print(resume.get_first_name())}}{\directlua{tex.print(resume.get_last_name())}}
-\phone[mobile]{(848) 224-1664}
-\email{EricLondres@outlook.com}
-\homepage{EricLondres.tech}
+\name{\directlua{tex.print(resume.first_name())}}{\directlua{tex.print(resume.last_name())}}
+\phone[mobile]{\directlua{tex.print(resume.phone())}}
+\email{\directlua{tex.print(resume.email())}}
+\homepage{\directlua{tex.print(resume.website())}}
 
 %% Content %%
 \begin{document}
