@@ -16,3 +16,34 @@ descriptions = [ "Presidential Scholarship", "Relevant Coursework: Algorithms; D
 languages = "Bash, C, C\\#, C++, Erlang, Go, Java, JavaScript, Lisp, OCaml, PHP, Python, Rust"
 web = "HTML, CSS/SASS, React, Svelte, Express"
 tech = "GNU/Linux, Git, Node, GitLab CI, SQL, MongoDB, GCP, AWS"
+
+[[work]]
+when = "Aug 2020 -- Dec 2020"
+title = "Course Assistant"
+employer = "Stevens Institute of Technology"
+city = "Hoboken, N.J."
+[[work.description]]
+has_tags = false
+text = "Introduced and expanded content to students for the graduate course Concurrent Programming"
+[[work.description]]
+has_tags = false
+text = "Assisted the course professor in designing test questions for tests the students will take"
+[[work.description]]
+has_tags = false
+text = "Planned course content and decided what needs to be taught"
+[[work.description]]
+has_tags = false
+text = "Devised and implemented effective ways to demonstrate course material"
+
+[[work]]
+# TODO: fill out second work entry
+[[work.description]]
+has_tags = false
+text = "Developed software for the Reinventing Civil Defense research project"
+[[work.description]]
+has_tags = true
+tags = "PHP, SQL, JQuery"
+# TODO: text
+# TODO: fill out remaining descriptions
+
+[leadership] # TODO
