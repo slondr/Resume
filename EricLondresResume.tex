@@ -31,20 +31,11 @@
 \sethintscolumntowidth{mmm yyyy -- mmm y}
 %% \small{I am an undergraduate computer science student in my third year of a bachelor's degree at Stevens Institute of Technology. I am passionate about technology, with strong interpersonal and communication skills to leverage my technical knowledge. \hfill (References available upon request.)}
 \section{Education}
-\cventry{Aug 2017 -- May 2021}{Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{
-  \begin{itemize}
-  \item{Presidential Scholarship}
-  \item{}
-\end{itemize}}
-
+\directlua{tex.print(resume.education())}
 \section{Technical Skills}
-
-\cvitem{Prog. Languages}{Bash, C, C\#, C++, Erlang, Go, Java, JavaScript, Lisp, OCaml, PHP, Python, Rust}
-
-\cvitem{Web Development}{HTML, CSS/SASS, React, Svelte, Express}
-
-\cvitem{Technologies}{GNU/Linux, Git, Node, GitLab CI, SQL, MongoDB, GCP, AWS}
-
+\cvitem{Prog. Languages}{\directlua{tex.print(resume.prog_langs())}}
+\cvitem{Web Development}{\directlua{tex.print(resume.web_dev())}}
+\cvitem{Technologies}{\directlua{tex.print(resume.tech())}}
 \section{Work Experience}
 
 \cventry{Aug 2020 -- Dec 2020}{Course Assistant}{Stevens Institute of Technology}{Hoboken, NJ}{}{
