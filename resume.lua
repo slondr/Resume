@@ -24,13 +24,29 @@ local function website()
 end
 
 local function education()
-   return {
-      date = data.education.when,
-      degree = data.education.degree,
-      university = data.education.university,
-      location = data.education.city,
-      descriptions = data.education.descriptions
-   }
+   local body = "\\begin{itemize}"
+   for i,desc in pairs(data.education.descriptions) do
+      body = body .. string.format("\\item{%s}", desc)
+   end
+   body = body .. "\\end{itemize}"
+   return string.format("\\cventry{%s}{%s}{%s}{%s}{}{%s}",
+			data.education.when,
+			data.education.degree,
+			data.education.university,
+			data.education.city,
+			body)
+end
+
+local function prog_langs()
+   return data.skills.languages
+end
+
+local function web_dev()
+   return data.skills.web
+end
+
+local function tech()
+   return data.skills.tech
 end
 
 return {
@@ -39,5 +55,8 @@ return {
    phone = phone,
    email = email,
    website = website,
-   education = education
+   education = education,
+   prog_langs = prog_langs,
+   web_dev = web_dev,
+   tech = tech
 }

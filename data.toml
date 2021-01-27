@@ -11,3 +11,8 @@ degree = "Computer Science"
 university = "Stevens Institute of Technology"
 city = "Hoboken, NJ"
 descriptions = [ "Presidential Scholarship", "Relevant Coursework: Algorithms; Data Structures; Concurrent Programming; Human--Computer Interaction; Database Management Systems; Compiler Design \& Implementation; Operating Systems" ]
+
+[skills]
+languages = "Bash, C, C\#, C++, Erlang, Go, Java, JavaScript, Lisp, OCaml, PHP, Python, Rust"
+web = "HTML, CSS/SASS, React, Svelte, Express"
+tech = "GNU/Linux, Git, Node, GitLab CI, SQL, MongoDB, GCP, AWS"
