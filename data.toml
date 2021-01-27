@@ -5,3 +5,9 @@ phone = "(848) 224-1664"
 email = "EricLondres@outlook.com"
 website = "EricLondres.tech"
 
+[education]
+when = "Aug 2017 -- May 2021"
+degree = "Computer Science"
+university = "Stevens Institute of Technology"
+city = "Hoboken, NJ"
+descriptions = [ "Presidential Scholarship", "Relevant Coursework: Algorithms; Data Structures; Concurrent Programming; Human--Computer Interaction; Database Management Systems; Compiler Design \& Implementation; Operating Systems" ]
