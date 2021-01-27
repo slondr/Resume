@@ -8,7 +8,10 @@ local function get_first_name()
 end
 
 local function get_last_name()
-   return data.info.first_name
+   return data.info.last_name
 end
 
-
+return {
+   get_first_name = get_first_name,
+   get_last_name = get_last_name
+}
