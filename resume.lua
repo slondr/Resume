@@ -3,15 +3,31 @@ T = require "toml"
 f = assert(io.open("data.toml", "r")):read("*all")
 data = T.parse(f)
 
-local function get_first_name()
+local function first_name()
    return data.info.first_name
 end
 
-local function get_last_name()
+local function last_name()
    return data.info.last_name
 end
 
+local function phone()
+   return data.info.phone
+end
+
+local function email()
+   return data.info.email
+end
+
+local function website()
+   return data.info.website
+end
+
 return {
-   get_first_name = get_first_name,
-   get_last_name = get_last_name
+   first_name = first_name,
+   last_name = last_name,
+   phone = phone,
+   email = email,
+   website = website
+   
 }
