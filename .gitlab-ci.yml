@@ -1,4 +1,4 @@
-image: brokenpylons/lualatex
+image: laurenss/texlive-full
 
 stages:
   - build
