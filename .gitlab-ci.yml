@@ -7,6 +7,7 @@ stages:
 build:
   stage: build
   script:
+    - apt update
     - apt install luarocks
     - luarocks install lua-toml
     - eval $(luarocks path)
