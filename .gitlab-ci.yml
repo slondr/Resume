@@ -8,7 +8,7 @@ build:
   stage: build
   script:
     - apt update
-    - apt install luarocks
+    - apt -y install luarocks
     - luarocks install lua-toml
     - eval $(luarocks path)
     - lualatex --shell-escape EricLondresResume.tex
