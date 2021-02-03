@@ -57,3 +57,56 @@ text = "Led development on a virtual reality project using Unity which visualize
 [[work.description]]
 has_tags = false
 text = "Introduced several new technologies to the workplace that substantially improved developer productivity and code quality, including Git, GitLab CI/CD, and modern JavaScript"
+
+[[leadership]]
+when = "Mar 2019 -- Mar 2020"
+title = "President"
+employer = "SITTV"
+city = "Hoboken, N.J."
+[[leadership.description]]
+has_tags = false
+text = "Oversaw the operations of the organization and handled administrative responsibilities"
+[[leadership.description]]
+has_tags = false
+text = "Fostered a healthy and productive environment for other executive officers and organization members"
+[[leadership.description]]
+has_tags = false
+text = "Organized \& chaired events, including public events and executive board meetings"
+[[leadership.description]]
+has_tags = false
+text = "Communicated on behalf of the organization to outside groups, including contract negotiations, budget defenses, and business meetings"
+
+[[leadership]]
+when = "Dec 2018 -- Dec 2019"
+title = "Webmaster"
+employer = "Alpha Phi Omega --- Theta Alpha Chapter"
+city = "Hoboken, N.J."
+[[leadership.description]]
+has_tags = true
+tags = "PHP, MySQL"
+text = "Managed a web application used by hundreds of users on a daily basis"
+[[leadership.description]]
+has_tags = false
+text = "Introduced new technologies such as \bbold{Cloudflare}; reduced page load times by over 90\%, and lowered initial paint times to less than 1 second while increasing developer efficiency"
+[[leadership.description]]
+has_tags = false
+text = "Recruited, trained, and led a team of junior developers"
+[[leadership.description]]
+has_tags = true
+tags = "React"
+text = "Designed and began implementation of a large--scale web application using modern technologies such as \bbold{Google Firebase} and user experience design using \bbold{Balsamiq}"
+
+[[leadership]]
+when = "Mar 2018 -- Mar 2019"
+title = "Director of Deliverables"
+employer = "SITTV"
+city = "Hoboken, N.J."
+[[leadership.description]]
+has_tags = false
+text = "Designed and implemented a cable video streaming platform for an audience of 1,500 viewers"
+[[leadership.description]]
+has_tags = false
+text = "Recruited and trained members in the use of video editing software"
+[[leadership.description]]
+has_tags = false
+text = "Employed, trained, and oversaw a team of systems administrators"
