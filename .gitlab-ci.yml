@@ -1,6 +1,24 @@
-image: alpine
+image: laurenss/texlive-full
 
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - apt update
+    - apt -y install luarocks
+    - luarocks install lua-toml
+    - eval $(luarocks path)
+    - lualatex --shell-escape EricLondresResume.tex
+  artifacts:
+    paths:
+      - EricLondresResume.pdf
+    
 pages:
+  stage: deploy
+  image: alpine
   script:
     - mkdir public
     - mv EricLondresResume.pdf public/
