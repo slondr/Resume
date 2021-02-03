@@ -49,6 +49,27 @@ local function tech()
    return data.skills.tech
 end
 
+local function work()
+   local ret = ""
+   for i,work_exp in pairs(data.work) do
+      ret = ret .. string.format("\\cventry{%s}{%s}{%s}{%s}{}{\\begin{itemize}",
+				 work_exp.when,
+				 work_exp.title,
+				 work_exp.employer,
+				 work_exp.city)
+      for i,desc_entry in pairs(work_exp.description) do
+	 if desc_entry.has_tags then
+	    ret = ret .. string.format("\\titem{%s}{%s}", desc_entry.text, desc_entry.tags)
+	 else
+	    ret = ret .. string.format("\\iitem{%s}", desc_entry.text)
+	 end
+      end
+      ret = ret .. "\\end{itemize}}"
+   end
+   return ret
+end
+   
+
 return {
    first_name = first_name,
    last_name = last_name,
@@ -58,5 +79,6 @@ return {
    education = education,
    prog_langs = prog_langs,
    web_dev = web_dev,
-   tech = tech
+   tech = tech,
+   work = work
 }
