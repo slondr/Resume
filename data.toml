@@ -43,7 +43,14 @@ text = "Developed software for the Reinventing Civil Defense research project"
 [[work.description]]
 has_tags = true
 tags = "PHP, SQL, JQuery"
-# TODO: text
-# TODO: fill out remaining descriptions
-
-[leadership] # TODO
+text = "Planned, developed, and maintained a complex web application to allow a speaker to create an interactive experience set in a nuclear war"
+[[work.description]]
+has_tags = true
+tags = "React"
+text = "Designed and implemented several event--specific websites"
+[[work.description]]
+has_tags = false
+text = "Led development on a virtual reality project using Unity which visualizes the scale and scope of a nuclear detonation in New York City"
+[[work.description]]
+has_tags = false
+text = "Introduced several new technologies to the workplace that substantially improved developer productivity and code quality, including Git, GitLab CI/CD, and modern JavaScript"
