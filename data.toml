@@ -36,7 +36,10 @@ has_tags = false
 text = "Devised and implemented effective ways to demonstrate course material"
 
 [[work]]
-# TODO: fill out second work entry
+when = "Jun 2019 -- Aug 2020"
+title = "Student Assistant"
+employer = "Stevens Institute of Technology"
+city = "Hoboken, N.J."
 [[work.description]]
 has_tags = false
 text = "Developed software for the Reinventing Civil Defense research project"
