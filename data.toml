@@ -87,14 +87,14 @@ tags = "PHP, MySQL"
 text = "Managed a web application used by hundreds of users on a daily basis"
 [[leadership.description]]
 has_tags = false
-text = "Introduced new technologies such as \bbold{Cloudflare}; reduced page load times by over 90\%, and lowered initial paint times to less than 1 second while increasing developer efficiency"
+text = "Introduced new technologies such as \\bbold{Cloudflare}; reduced page load times by over 90\\%, and lowered initial paint times to less than 1 second while increasing developer efficiency"
 [[leadership.description]]
 has_tags = false
 text = "Recruited, trained, and led a team of junior developers"
 [[leadership.description]]
 has_tags = true
 tags = "React"
-text = "Designed and began implementation of a large--scale web application using modern technologies such as \bbold{Google Firebase} and user experience design using \bbold{Balsamiq}"
+text = "Designed and began implementation of a large--scale web application using modern technologies such as \\bbold{Google Firebase} and user experience design using \\bbold{Balsamiq}"
 
 [[leadership]]
 when = "Mar 2018 -- Mar 2019"
